@@ -32,3 +32,4 @@ pythontex-files-*/
 *.synctex.gz(busy)
 *.pdfsync
 
+__latexindent_temp.tex
