@@ -57,20 +57,22 @@ One can argue that productivity is an ever fighting battle, but after the introd
 \end{figure}
 
 \section{Construction Engineering}
+This section will introduce the CI as a context for the project, as well som implications and motivation forcing a change in the way CI-projects are managed. 
+
 Construction Engineering has been a significant field of engineering throughout history. Originates from the construction of the pyramids. Continuing with Da Vinci, and some of the most skilled people, in the middle ages, forming some of the most known structures of today. In the raging of wars and through the industrial revolution, one could witness the rapid development of both civil and military engineering; as a result, one could now construct both faster and better than ever before.
 
 Over the last century, the requirements of constructions have become more and more complex. The buildings are getting higher, the tunnels are getting longer, and the roads are getting wider. The size of things is not equal to the complexity of the construction. Adding automated systems, multipurpose functionality, and multiple communication platforms, the complexity is ever so present. Take for example a university building, which is no longer simply a place where one can lecture and read. A university building now requires to host highly sophisticated labs for various purposes, as well as several other rooms for different kinds of purposes, and some also multipurpose. Besides, that is just the requirement of the rooms; one needs to consider all the systems added in regards to, among others, ventilation, electricity, sewage treatment, internet, and telecommunication. All these systems- and room requirements, as well as other requirements, makes the construction of the modern building way more complicated than it used to be. 
 
 Even though the complexity of the construction is increasing, the process management has, for the most part, been the same — resulting in an unfortunate progress of productivity in CI. 
 
-\subsection{Construction Industry Project as Context for the Project} \label{sec:CI_context}
+\subsection{Construction Industry Project as a Context for the Project} \label{sec:CI_context}
 The process of constructing, in Norway, follows a pattern described by The Norwegian standard agreements (SSA). The construction process divides into five steps: (1) the early phase: where deciding both the vision of the project and process of project conduction; (2) the procuring of architect or adviser: starting by publishing the project and at the end awarding the best actor with a contract; (3) the design phase: where one produces different levels of  design; (4) the procuring of entrepreneur(s): includes deciding on contracts, and choosing the correct contractors for the job; and (5) realization: where conducting the substantive implementation. 
 
 The third phase, designing, is typically conducted in three levels of granularity. First, the architect is sketching the over-all concept of the construction and delivering the concept as a set of drawings, models, and specifications. Furthermore, the concept is to realize the intention and vision of the project. Second, often called the pre-project, a team often consisting of architects, project managers, and engineers, is to define the project. The definition results in a set of user- and technical requirements, as well as further developing the functional and physical structure of the project. It is here one sets the budget and goals of the project. The pre-project is ending by handing the result and a proposal of decision for political treatment. The political treatment is known to be time-consuming, often spanning a one-to-two year period. Given the political decision, the requirements and budget set, limits and sets the basis for the rest of the project, as well as the goals used to measure. Third and finally, the detailed design is happening. The result of the detail design is the sketches used in the procurement of contractors — plus, an outline of the awarding strategy used in the next phase. Because of the time-consuming political decision, a new team is often responsible for the detailed design. Documentation of the pre-project is therefore vital. When going into the realization, it is the detail-design-team that is responsible for the project to keep the budget and achieving the goals set by the political decision, which can seem unfair if the pre-project requirements are not manageable.
 
 A typical case is a change of requirements, required by a stakeholder, either during detailed planning or the production-phase. A change often leads to budget-breach, or if not feasible, dissatisfied stakeholders. 
 
-\subsection{Productivity}
+\subsection{The problem of Labor Productivity in the Construction Industry}
 The Norwegian CI is, as mentioned, accused of having a decline in Labor Productivity (LP). An Industry that is one of the most significant industries in On-Land Norway, with 466 billion Norwegian Kroner accumulated in 2017. A common fact shared among the industry stating that CI is facing an LP decline of 10\%, since the year of 2000. Often these numbers are justified by a complex and ever-changing industry and considered not representative of the industry of today. Sure the numbers are correct, but do these numbers show us the big picture?
 
 In this section, the question of declined LP in Norwegian CI will be discussed, and if LP is in fact \textit{not} declining.
@@ -138,7 +140,7 @@ Since the introduction of SCRUM \cite{sutherland}, in 1995, the use of it, and o
 \end{figure}
 
 \section{Agile Project Management}
-This section will give an overview of Agile in the context of project management, as well as provide an introduction of different Agile management methods relevant to this project. 
+This section will give an overview of Agile in the context of project management, as well as provide an introduction of different Agile management methods as context for the reader. Furtheremore, a discussion of Agile as a management method, and if the introduction of Lean is in fact just a hype. 
 
 First, when discussing this topic, project methods need to be defined. Different from the \textit{process}, which is more concerned about the different phases of the project, the \textit{method} is about how one can manage within a given stage of a project. Thus, project management methods are about making the most effective utilization of resources within a given phase. 
 
@@ -148,7 +150,9 @@ In the ICT-industry the urge for change in project management within distinct ph
 As we have mentioned increasing productivity and efficiency in a project is desirable for every project, hence marginal cost. This added to the fact that LP in the CI is decreasing made the industry wanting to take action. This project is, therefore, concerned about the bottom-up approach securing more cost-effective and labor-productive management, leading to a more solid industry in the end. The LP-problem is not the only motivation for CI to utilize Agile project management methods. One can identify most of the same issues ICT had when introducing Agile. Most present, as mentioned, is: (a) increased complexity, (b) extensive documentation, (c) reporting of issues leading to change of design during production, and last (d) delivering a construction without errors.
 
 \subsection{Agile Project management}
-Agile Project Management (APM) diverse from linear processes; by the way, a project, or the workers, can rapidly adapt to circumstances. This lines with the problem of requirement change in SD. Moreover, it corresponds to the reporting of issues during production in the CI. The initiatives done since the adaptation of agile in SD was expressed in the Agile Manifesto \cite{agile_manifesto}, when published in 2001. The manifesto gave a tangible reference for project leaders, as well as developers, to steer the project with the correct mindset and focus. Moreover, the manifesto gave a baseline for creating new and potentially better APM methods. The Agile Manifesto says:
+Seen the motivation for both the ICT and CI to make changes and introduce APM. This section will give a short introduction to APM: the bases as well as some disussion of the use. Furtheremore, the section will introduce some known ASDs, as context for the reader. These methods promote smaller teams of 5-12 people; therefore, included is also an elaboration of ASD in large scale corporations, as well as, Lean, which encourages comparison between SD and Construction. 
+
+APM diverse from linear processes; by the way, a project, or the workers, can rapidly adapt to circumstances. This lines with the problem of requirement change in SD. Moreover, it corresponds to the reporting of issues during production in the CI. The initiatives done since the adaptation of agile in SD was expressed in the Agile Manifesto \cite{agile_manifesto}, when published in 2001. The manifesto gave a tangible reference for project leaders, as well as developers, to steer the project with the correct mindset and focus. Moreover, the manifesto gave a baseline for creating new and potentially better APM methods. The Agile Manifesto says:
 \begin{quote}
     {\bf Individuals and interactions} over processes and tools \\
     {\bf Working software} over comprehensive documentation \\
@@ -157,25 +161,26 @@ Agile Project Management (APM) diverse from linear processes; by the way, a proj
 \end{quote}
 Including these four sentences, the manifesto also includes a set of twelve principles. Theses principles emphasize always having a working product, an enjoyable working environment, and a proper dialog with the customer. Wich eventually results in a team able to adapt to change,  also late in the development. The manifesto emphasize that face-to-face conversation is the best way of proper conversation, even though much of the interaction can be supported by software.
 
-\subsubsection{Varius Agile Software development methods}
-This section will give a short introduction of some known ASDs such as; Extreme Programming (XP), SCRUM, or Kamban. These methods promote smaller teams of 5-12 people; therefore, also included is a short elaboration of ASD in large scale corporations, which encourages comparison between SD and Construction.
+\subsubsection{Agile software development in smaller teams}
 
-\subsubsection{Extreme Programming}
-\subsubsection{Kanban}
-\subsubsection{Scrum} \label{sec:scrum}
 \subsubsection{Agile software development in large scale corporations}
-\subsection{Lean} \label{sec:lean}
-\subsubsection*{Lean Construction} \label{sec:lean_construction}
+\subsection{Lean}\label{sec:lean_construction}
 
 \section{Cooperation in Large Organizations}
 The work of constructing a highly complex and costly structure is, as we have understood, difficult. There is no straightforward way of doing it, and the focus on project management is an essential part of it. Though, in the end, the act of design and project management is primarily making people work together. Make people interact, coordinate, and synchronize for them to create something that could not happen, if not cooperating. The challenge of making people meet and work together on a common goal, not being self-centered, is something the industry finds difficult. It is seen both in CI, in ICT, and most other industries that have to coordinate different domains of competence. 
 
 This section will discuss this challenge and examine what are the ground principals of cooperation and look at different measures one can make. How may computers support cooperative work? Furthermore, how do contracts influence the interest of different actors to cooperate? 
 
-\subsection{Comunication and Knowledge sharing}
-First, a short introduction to cooperation: Cooperation is the act of communicating and share knowledge in a way that makes different actors coordinate, interact, and synchronize. The act of talking starts with a desire, or at least a reason, for various individuals to talk. One must take for granted that the lust is there, but in some cases, contracts, politics, or even physical barriers hamper this to happen. Regarding physical barriers, the internet and telecommunication have been a significant leap towards decreasing the boundaries. Computer-supported cooperative work (CSCW) is how technology supports teams cooperate in a project. CSCW will be discussed later in this section. Furthermore, this section will give a brief insight into Norwegian CI- contracts and politics as a context on how for the project, which is an import backdrop for why individuals and parties act the way they do. 
+First, a short introduction to cooperation: Cooperation is the act of communicating and share knowledge in a way that makes different actors coordinate, interact, and synchronize. The act of talking starts with a desire, or at least a reason, for various individuals to talk. 
 
-The act of talking among project actors and team members is, in most cases, sharing knowledge. One often divides knowledge into tacit- and explicit knowledge. Tacit knowledge is something that is known to actors, but not written down, or otherwise, for somebody else to learn and understand. Where, on the other hand, explicit knowledge can be assimilated simply by reading a manual, or a document. Systemizing could help digest explicit knowledge because sometimes the information is there, but how to find it could be the impediment. In modern times computers are taken in to use, systemizing knowledge. Then again, the introduction of computers leads to new tacit knowledge, on how to use the systems.
+One must take for granted that the will is there, but in some cases, contracts, politics, or even physical barriers hamper this to happen. Regarding physical barriers, the internet and telecommunication have been a significant leap towards decreasing the boundaries. Computer-supported cooperative work (CSCW) is how technology supports teams cooperate in a project. CSCW will be discussed later in this section. Furthermore, this section will give a brief insight into Norwegian CI- contracts and politics as a context on how for the project, which is an import backdrop for why individuals and parties act the way they do. 
+
+\subsection{Comunication and Knowledge sharing}
+The act of talking among project actors and team members is, in most cases, sharing knowledge. One often divides knowledge into tacit- and explicit knowledge. Tacit knowledge is something that is known to actors, but not written down, or otherwise, for somebody else to learn and understand. Where, on the other hand, explicit knowledge can be assimilated simply by reading a manual, or a document. 
+
+A known problem in the CI is knowledge sharing. The motivations for knowledge sharing is as Dainty describes mostly social \cite{dainty2005hrm}. The contractors do what others do, are following the leaders' example, and the feeling of taking part in something bigger than their problems is vital for making people share knowledge. Also, the fact that people need to get something in return when sharing \cite{zhangAttitude}. They get a positive effect through feedback and the effectiveness of their work. Furthermore, Zhang and Ng note that the problem causing people not to share is the fear of losing face. For the managers to contribute to knowledge sharing, they have to create a strategy of capturing and distributing the knowledge \cite{kamara2002knowledge}, often tacit, created in each project.  
+
+Systemizing could help digest explicit knowledge because sometimes the information is there, but how to find it could be the impediment. In modern times computers are taken in to use, systemizing knowledge. Then again, the introduction of computers leads to new tacit knowledge, on how to use the systems. A platform for knowledge sharing could serve positive for the different CI-businesses \cite{kivrak2008capturing}. 
 
 Boundary Objects, introduced in the original paper \cite{star&griesemer}, is a helpful tool when looking at complex situations. Defining objects where actors cooperate and exchange tacit- and explicit knowledge. A boundary object is part of the social world and is, in some way, a facilitator for communication between actors. Star and Greisemer argue that it has to be well-defined, as well as fluid, such that it can both adapt and maintain a collective identity between parties. An example in an engineering project would be documentation or a user manual, which contains explicit knowledge for different parties to share. Furthermore, a stand-up meeting in Lean Construction is a boundary object which emphasizes tacit knowledge sharing.
 
@@ -188,9 +193,14 @@ This motivation applies to Software development as much as for CI. Software and 
 
 To make groupware work, first, it needs to meet the needs and requirements of the group. When the software is thoroughly developed and tested to meet the requirements, one can argue that the software should work. Still, after a proper software development process, the critical implementation phase begins. Implementing new software has to fit the users. The article \textit{Transforming Work Through Information Technology} by \cite{Robey&Sahay}, describes how the deployment of new groupware in two different counties, ends in two different experiences. Central in the succeeding county, is knowledge sharing and grooming of users beforehand. They were conducting the implementation of the software in a bottom-up manner. In this case, the users were the ones who initiated the deployment. In the other county, who did not succeed, initiating the implementation was a centralized data processing department. As well, the knowledge had to be thought through manuals and learning by doing.
 
+CSCW could also aid knowledge sharing \cite{monplaisir2002enhancing}, by, for example, make use of decision-making software. This way, teams having trouble making decisions can have a trusted source guiding the conclusions. Moreover, the use of ai and big data in the context to support the teams, in ways never seen before, shows promising results, when the ethical issues  \cite{jung2017computational} are kept within boundaries.   
+
 In the end, to be highly successful, when fulfilled all other terms, the application has to be usable. The software could still work, but often a lot of knowledge is needed to understand the technology, if not emphasizing on high usability. 
 
 \subsection{Contracts in the Construction Industry}
+This section will give an introduction to issues concerning contracts in the CI. First, a short introduction to contracts in the CI, as a context for the project. 
+
+\subsubsection*{Contracts in Construction Industry as a Context for the project}
 When considering how contractors work together, one has to review the contracts and the politics related. In CI and other fields where contractors are needed, the process outline, defined by SSA, often outlines how to work. During this process, in CI, the party announcing procurements creates tailor-made contracts based on the Norwegian Standard (NS), e.g., NS 8405, NS 8406, NS 8407, and others, which do not support an agile process. This yields a waterfall process. 
 
 Tailor-made deals makes for a challenging space of agreements for the entrepreneurs. This space promotes larger companies or the ones who specialize in contracts from only a few vendors. A contractor who wants to earn a new principal has to learn the contract, giving the advantage to the more experienced contractors. Often the more advanced companies are not pleased when parties introduce new contract outlines - simply because they lose their edge. 
@@ -207,7 +217,15 @@ When constructing a highly complex construction \textit{Utførelsesentreprise} i
     \item General Contract (\textit{Generalentreprise}): The manager signs a lead contractor, the general contractor, responsible for signing subcontractors, coordination and progress in the implementation;
 \end{itemize}
 
-Picking the correct contract is vital in securing desired coordination and interaction, but at the same time, it needs to fit the manager's skills and resources. In the end, choosing the right sort of contract can be vital for meeting the budget.
+\subsubsection*{Issues Related to Contracts}
+Picking the correct contract is vital in securing desired coordination and interaction, but at the same time, it needs to fit the manager's skills and resources. In the end, choosing the right sort of contract can be vital for meeting the budget. The problem with the complex domain of contracts is that managers tend to pick the same contracts \cite{laedre2006procurement}. Even though construction projects often vary from project to project, the procedure of picking the correct contract for the specific project is often not done.
 
+The politics and contracts in a fragmented CI project, with a handful of contractors and sub-contractors, makes for difficulty in cooperation. Issues related to knowledge sharing is, among others, contracts and politics \cite{alashwal2011knowledge} — the issue origins in the fact that every contractor has the goal of maximizing its marginal cost \cite{miller2002harmonization}. This problem is especially problematic in projects consisting of several different companies, such as in complex constructions. Miller, Packham, and Thomas, in the article, also points out the fact that cooperation and knowledge sharing in mixed teams is the cornerstone in APM. This makes Lean in the CI even more complicated when complex contracts and harmonization among team members are taken into a count. 
+
+Furthermore, the considerable cost of mistrust in CI-projects is shown to be a factor in the overall cost of a project \cite{zaghloul2003construction}. When actors are more busy protecting their contract, rather than adding to the team, the advantages of cross-functional teams can be lost.  Also, prior ties could have a significant impact on how team members interact, as described in the paper of Bruvik and Rolfsen \cite{rolfsen}. 
+\begin{quote}
+    \textit{Positive prior ties can have a substantial effect on the development of trust at the beginning of the project.}
+\end{quote}
+Furthermore, the paper is concluded by identifying four aspects that can aid interaction and cooperation: (1) a common philosophy, (2) open communication, (3) clear role expectations, and (4) a shared climate of trust. Hence, prior ties will help in establishing these aspects. One can think that negative prior ties will especially defect the second and the fourth aspect. 
 
 \cleardoublepage
