@@ -110,7 +110,7 @@ Stating that CI has declining Labor Productivity is therefore not unilaterally c
 Thus yields for a bottom-up approach: Starting with a process in a project and perfecting it, continuing with each process will eventually lead to a resulting better efficiency and productivity in the entire project.  Which, if done in the entire constructing industry, will lead to increased LP overall. Therefore, the industry needs to overcome the challenges, mentioned earlier, (starting with a breach of planned timeline and budget, with symptoms such as requirements change during design, increased complexity, and struggling to complete the products,) were digitalization, Agile (hereunder Lean), is promising and populare solutions to the problem. 
 
 \subsubsection{Measuring productivity on project-, process- and process level}
-Practicing the bottom-up approach and implementing Lean Constructing in the design- and implementation phase, increasing productivity, and overcome difficulties (such as requirements change during design, increased complexity, and breach of planned timeline and budget) within the particular project phases. Lean is an excellent method but offers no mechanism measuring the achieved improvements. Using KPI's measuring could be a solution. Skappel \cite{KPIs_in_lean} suggests in her master thesis, ten KPIs ensuring continuous flow improvement in Lean design process: 
+Practicing the bottom-up approach and implementing Lean Constructing, explained in section \ref{sec:lean}, in the design- and implementation phase, increasing productivity, and overcome difficulties (such as requirements change during design, increased complexity, and breach of planned timeline and budget) within the particular project phases. Lean is an excellent method but offers no mechanism measuring the achieved improvements. Using KPI's measuring could be a solution. Skappel \cite{KPIs_in_lean} suggests in her master thesis, ten KPIs ensuring continuous flow improvement in Lean design process: 
 \begin{enumerate}
     \item Number of work packages (deliveries) completed and delivered within a takt time
     \item  Number of decisions made on the wrong basis
@@ -134,7 +134,7 @@ Since the introduction of SCRUM \cite{sutherland}, in 1995, the use of it, and o
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{fig/ba_on-land_ICT.png}
+    \includegraphics[width=0.9\textwidth]{fig/ba_on-land_ICT.png}
     \caption{Labor productivity in ICT, compared to constructing industry and average on-land businesses in Norway, from 2000 to 2016.}
     \label{fig:LP_ICT_VS}
 \end{figure}
@@ -153,18 +153,51 @@ As we have mentioned increasing productivity and efficiency in a project is desi
 Seen the motivation for both the ICT and CI to make changes and introduce APM. This section will give a short introduction to APM: the bases as well as some disussion of the use. Furtheremore, the section will introduce some known ASDs, as context for the reader. These methods promote smaller teams of 5-12 people; therefore, included is also an elaboration of ASD in large scale corporations, as well as, Lean, which encourages comparison between SD and Construction. 
 
 APM diverse from linear processes; by the way, a project, or the workers, can rapidly adapt to circumstances. This lines with the problem of requirement change in SD. Moreover, it corresponds to the reporting of issues during production in the CI. The initiatives done since the adaptation of agile in SD was expressed in the Agile Manifesto \cite{agile_manifesto}, when published in 2001. The manifesto gave a tangible reference for project leaders, as well as developers, to steer the project with the correct mindset and focus. Moreover, the manifesto gave a baseline for creating new and potentially better APM methods. The Agile Manifesto says:
-\begin{quote}
-    {\bf Individuals and interactions} over processes and tools \\
+\begin{quotation}
+    \noindent {\bf Individuals and interactions} over processes and tools \\
     {\bf Working software} over comprehensive documentation \\
     {\bf Customer collaboration} over contract negotiation \\
     {\bf Responding to change} over following a plan \\
-\end{quote}
+\end{quotation}
 Including these four sentences, the manifesto also includes a set of twelve principles. Theses principles emphasize always having a working product, an enjoyable working environment, and a proper dialog with the customer. Wich eventually results in a team able to adapt to change,  also late in the development. The manifesto emphasize that face-to-face conversation is the best way of proper conversation, even though much of the interaction can be supported by software.
 
-\subsubsection{Agile software development in smaller teams}
+\subsection{Agile software development in smaller teams}
+The above mentioned agile manifesto, says a lot about principals and values when conducting APM and ASD. The manifesto says nothing about the actual process, that is for the different agile methods to explain. Known methods such as SCRUM \cite{sutherland}, Extreme Development (XP) \cite{Beck:1999:EPE:318762}, and Feature-Driven Development\cite{palmer2001practical} are among other descriptions and practices on how to implement scrum as a work method. Abrahamsson, identify that common for all is that they are incremental, straightforward, cooperative, and adaptive \cite{abrahamsson2017agile}. Different from the waterfall process, Abrahamsson concludes, agile emphasizes on being people-centric. 
 
-\subsubsection{Agile software development in large scale corporations}
-\subsection{Lean}\label{sec:lean_construction}
+A generic view of the agile method is iterative development, seen in figure \ref{fig:agile_iteration}. Using the example of SCRUM, the iteration involves sprint-planning, implementation, and review. The method emphasizes growing the team, and after every iteration, a retrospective meeting is being held. Also, worth mentioning is the daily scrum, a meeting where the team discusses the progress, and issues can be raised. Most of the artifacts and events applied in SCRUM has comparable ceremonies in other ASDs. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{fig/agile_loop.png}
+    \caption{Illustration of the generic agile loop.}
+    \label{fig:agile_iteration}
+\end{figure}
+
+Still, the process of creating a product has to involve more than just sprint planning. Most of the agile methods also include prior planning before the iterations start. This planning is to be found both in XP and SCRUM. When agile development methods are applied, a problem with estimation often occurs \cite{lang2013cost}. This problem is very present for the managers \cite{dybaa2008empirical}. Traditional project managers utilize a Gantt chart, scheduling project tasks. Sutherland, on the other hand, argues the use of Gantt is mostly a waste of time:
+\begin{quote}
+    \textit{The only problem with them is that they are always, always wrong.}
+\end{quote}
+Even though most of the methods encapsulate planning in the process, Abrahamsson, in his paper \cite{abrahamsson2017agile}, discovers that there are only two of the methods implementing concept creation in the process. This is an essential part of the CI project process. Still, one can argue that this is not a part of the development and is supported by the SSA e-procurement process \cite{e-procurement-process}. 
+
+Agile methods are, as the title of this sub-section implicates, planned for smaller teams. Challenges, when extending the team-size, of more than the recommended 5-12 people, are decision-making, communication, and control \cite{xu2009coordination}. Also, when wanting to use the methodologies in large organizations, some adjustment is needen. This made for the introduction of large-scale agile organization methodologies discussed in the next sub-section.  
+
+\subsection{Agile in Large Scale Organizations}
+As mentioned, most agile methodologies are designed for smaller teams. Challenges applying agile in large-organization are mostly communication and coordination \cite{dingsoyr2013research}. These issues are well-known when considering large organizations, but are very present when the agile mindset emphasizes harmonization between different actors \cite{miller2002harmonization}. 
+When considering large-scale agile, one often want the whole organization to utilize agile with diverse teams. Understanding the concept of agile methodology is problematic. This applies to the managers, and team-members not known to agile beforehand \cite{svorstol2017tailoring}.
+
+When considering large-scale agile organizations, one can divide between organizations using consultants and large in-house scale organizations. When considering projects and organizations of that size, the complexity of management is very present. Still, most of the problems are the same, including knowledge sharing, clear practices, and interacting \cite{smite2019spotify}. In the case of Spotify, they promote continuously improving their practices, as well as communicating in a face-to-face fashion.
+
+Often directors tend to employ old tools and practices not suited for agile, such as Gantt charts, detailed plans and documentation, and set-dates for production \cite{benjaminsen2019}. Both in the case of Spotify and the A-team-project, the discovery is that autonomous team is way more effective than typical teams managed by some leader. Thus, the managers and directors are to facilitate the best infrastructure for the teams. 
+
+\subsection{Lean}\label{sec:lean}
+As we know, the term agile was first introduced by Takeuchi and Nanaka in the article \textit{The new new product development game}. They explained how Toyota utilized agile methodology in its construction line. Moreover, the systems used at Toyota are formally named Lean manufacturing and was developed by Ohno and Shingo \cite{becker1998lean}. The idea of the build-measure-learn loop has later been adopted by many other industries, especially after the international bestselling book: \textit{the lean startup} \cite{ries2011lean}. The constant focus on added value to the product is a quintessential aspect of the methodology, which is yearned for many managers out there. 
+
+The lean startup was written by Eric Ries, which origin is software developer, and the approach explained in the book is, therefore, primarily suited for software startups. The act of creating a minimum viable product is not as applicable in the CI. Lean thinking, on the other hand, could still be beneficial for the CI \cite{owen2006agile}, thus leading to the introduction of Lean Construction. 
+
+\subsubsection{Lean Construction as a Context for the Project}\label{sec:lean_construction}
+Agile Construction origins from the Lean Manufacturing, and share many mutual ideas, despite operating on vastly different products \cite{salem2006lean}. While in manufacturing, one can move the product around, the physical size of a construction project induce other measures in Constructing. That is why Lean Construction has rejected many of the ideas from Laan Manufacturing \cite{howell1999lean}. The essential aspect of Agile Construction is flow. For the method to accomplish the perfect flow, it does, as in other Agile methodologies, stack each iteration with a clear set of objectives to be conducted in the planned timeframe, and the flow is kept by planning the correct amount of tasks before the set deadline. The Norwegian Lean Construction translation uses a train as an image of the flow. Where the idea is for the train to move through the construction. The movement happens when every task within a specific area is completed. The train is represented with a set of cars, each a representation of a discipline. Alining the cars, so that the correct disciplines are in succeeding order.
+
+The output of every flow is the percent planned completed (PPC). The managers can adjust the order of carts, or the number of tasks to make the production more efficient. When utilizing Lean Construction, a top-down approach recommended \cite{lean_i_praksis}. This emphasizes the problem raised by Ingvaldsen, in her article, that the teams lose autonomy when applying Lean in, which conflicts with the Norwegian working model. 
 
 \section{Cooperation in Large Organizations}
 The work of constructing a highly complex and costly structure is, as we have understood, difficult. There is no straightforward way of doing it, and the focus on project management is an essential part of it. Though, in the end, the act of design and project management is primarily making people work together. Make people interact, coordinate, and synchronize for them to create something that could not happen, if not cooperating. The challenge of making people meet and work together on a common goal, not being self-centered, is something the industry finds difficult. It is seen both in CI, in ICT, and most other industries that have to coordinate different domains of competence. 
