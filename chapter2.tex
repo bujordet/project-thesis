@@ -1,14 +1,14 @@
 %===================================== CHAP 2 =================================
 
 \chapter{Literature Review}
-This project's objective is to look at how the construction industry, or precisely how the LSB-project, make use of agile project management methods and digital tools to aid project management. The CI's lust for digitalization is ever-present, and often projects consist of entire departments responsible for digitalization. This chapter is using ICT as a successful case of utilization of digitalization in the context of agile project management. 
+This project's objective is to identify the underlying reason for the striking gap in LP between the CI and ICT-industry. For the project to identifying this gap, this thesis looks at how the construction industry, or precisely how the LSB-project, makes use of agile project management methods and digital tools to aid project management. The CI's lust for digitalization is ever-present, and often projects consist of entire departments responsible for digitalization. This chapter is using ICT as a successful case of utilization of digitalization in the context of agile project management. 
 
 First, the chapter takes a historical look at ICT and CI, and which factors made both utilize agile project management in the first place – what were the symptoms needed to be fixed? This comparison gives a surprisingly similar line of arguments, where productivity, complexity, failing to meet budgets, and requirements change during project implementation are some — additionally, similarities between the project process makes for comparison. 
 
 Secondly, the chapter discussing organizational cooperation, where one looks at software as a tool aiding organizational interaction and interaction. Furthermore, the chapter gives a brief overview of a traditional CI project, as well as a short overview of different agile project management methods as a context for the project.
 
 \section{A Brief History of Software Engineering} \label{sec:ICT_history}
-Software engineering is considered one of the newer disciplines of engineering. From 1842, when Ada Lovelace first described the advantages of the Analytical Engine, up to the 1968 NATO Garmisch conference \cite{naur1969software}, computer science was not considered an engineering field at all. Back then, engineers found writing code a handcraft, done by the specialists, that could be applied in several disciplines of engineering. 
+Software engineering is considered one of the newer disciplines of engineering. From 1842, when Ada Lovelace first described the advantages of the Analytical Engine \cite{menabrea1842sketch}, up to the 1968 NATO Garmisch conference \cite{naur1969software}, computer science was not considered an engineering field at all. Back then, engineers found writing code a handcraft, done by the specialists, that could be applied in several disciplines of engineering. 
 
 By the 1950s, military initiatives had seen the need for some structure or process that could aid large-scale development. Because there was no standard procedures the industry suffered significant productivity issues. The process used back then is now known as the code-and-fix method. Problems using this method was: (a) products not hitting the needs of the user, (b) code that was barely readable, and (c) not testable. Also, producing software with a team was shown difficult because of a lack of documentation and inexperienced team members. 
 
@@ -45,9 +45,9 @@ Even after Royce, the industry still struggled with requirements, documentation,
 \begin{quote}
     \textit{"Thou shalt not write one line of code until every detailed design specification is completed."} - Software Developer 
 \end{quote}
-The industry, entering the 90s and the 21 century, had a set of structures, processes, and models. Furthermore, it had become a known and highly valued field of engineering. Still, the discussion of productivity- and efficiency was present. Large software developments failed to deliver at the time and cost initially planned, sometimes failing to deliver at all.  Some of the repeating problems were: (1) the initial requirements often changed during the development process: forcing the development going back to the origin, costing both time and money; (2) the need of project management during a stage of the process: making sure developers working in parallel being exploited at an accepted level, and knowing what to implement at all times. The process models, such as Waterfall, structure the order of stages, and when to proceed to the next stage, while process methods are more concerned about guidance through each phase. Thus the need for software management methods was present and the introduction of Agile Development as a means to overcome, among others, the two problems mentioned. 
+The industry, entering the 90s and the 21 century, had a set of structures, processes, and models. Furthermore, it had become a known and highly valued field of engineering. Still, the discussion of productivity- and efficiency was present \cite{boehm1987improving}. Large software developments failed to deliver at the time and cost initially planned, sometimes failing to deliver at all.  Some of the repeating problems were: (1) the initial requirements often changed during the development process: forcing the development going back to the origin, costing both time and money; (2) the need of project management during a stage of the process: making sure developers working in parallel being exploited at an accepted level, and knowing what to implement at all times. The process models, such as Waterfall, structure the order of stages, and when to proceed to the next stage, while process methods are more concerned about guidance through each phase. Thus the need for software management methods was present and the introduction of Agile Development as a means to overcome, among others, the two problems mentioned. 
 
-One can argue that productivity is an ever fighting battle, but after the introduction of agile development, productivity is shown to have a definite increase in Norwegian ICT-industry. Looking at figure \ref{fig:ICT_BA_1972}, comparing ICT and CI, the difference is substantial. Yes, the productivity of CI is not good, but a productivity gain of 478,9\% from 1972 until 2017 is to be considered satisfactory. One can see a big leap from the middle of the 90s. Using Labor Productivity measuring how a industry is discussed later in this chapter.
+One can argue that productivity is an ever fighting battle, but after the introduction of agile development, productivity is shown to have a definite increase in Norwegian ICT-industry. Looking at figure \ref{fig:ICT_BA_1972}, comparing ICT and CI, the difference is substantial. Yes, the productivity of CI is not good, but a productivity gain of 478,9\% from 1972 until 2017 is to be considered satisfactory. One can see a big leap from the middle of the 90s. Using LP measuring how a industry is discussed later in this chapter.
 
 \begin{figure}
     \centering
@@ -59,6 +59,7 @@ One can argue that productivity is an ever fighting battle, but after the introd
 \section{Construction Engineering}
 This section will introduce the CI as a context for the project, as well som implications and motivation forcing a change in the way CI-projects are managed. 
 
+\subsection{A Brief History of the Construction Industry}
 Construction Engineering has been a significant field of engineering throughout history. Originates from the construction of the pyramids. Continuing with Da Vinci, and some of the most skilled people, in the middle ages, forming some of the most known structures of today. In the raging of wars and through the industrial revolution, one could witness the rapid development of both civil and military engineering; as a result, one could now construct both faster and better than ever before.
 
 Over the last century, the requirements of constructions have become more and more complex. The buildings are getting higher, the tunnels are getting longer, and the roads are getting wider. The size of things is not equal to the complexity of the construction. Adding automated systems, multipurpose functionality, and multiple communication platforms, the complexity is ever so present. Take for example a university building, which is no longer simply a place where one can lecture and read. A university building now requires to host highly sophisticated labs for various purposes, as well as several other rooms for different kinds of purposes, and some also multipurpose. Besides, that is just the requirement of the rooms; one needs to consider all the systems added in regards to, among others, ventilation, electricity, sewage treatment, internet, and telecommunication. All these systems- and room requirements, as well as other requirements, makes the construction of the modern building way more complicated than it used to be. 
@@ -72,18 +73,40 @@ The third phase, designing, is typically conducted in three levels of granularit
 
 A typical case is a change of requirements, required by a stakeholder, either during detailed planning or the production-phase. A change often leads to budget-breach, or if not feasible, dissatisfied stakeholders. 
 
+\subsection{Building Informantion Modeling} \label{sec:bim}
+Building Information Modeling (BIM) is an essential tool in construction engineering. Since the introduction of 2D data generated drawings (CAD), the evaluation has been rapid. Frank Gehry's introduction of 3D in the Peter B. Lewis building is, by many, the birth of 3-D modeling in the construction business. This introduction led to a burst of innovations due to the complex construction, and the tool 3D modeling gave the engineers \cite{frank_gehry}. The evolution of BIM has been tried syntheziced by many \cite{liang2016development}. Figure \ref{fig:bim_levels} is commonly used representation by Bew and Richards \cite{bew2008bim}. Level 3 is where one wants to be now a days, but most are still at level 2. The difference is in the level of interaction between actors and how they can use a shared model.
+
+BIM is, in the technical sense, a file format. The BIM-file storing all information about the construction that is structure, pipes, VVS, systems, and more. Modelers and architects can change and update the file. Others, such as construction workers, can read the information when constructing the building, and assembling the systems. Furthermore, the model is an as-is-model of the final construction, making the file valuable for janitors when running the building — making for utilization of the BIM-model throughout the whole lifecycle of the building \cite{arayici2010building}. 
+
+BIM has become a methodology, helping management and actors coordinate in the design phase; BIM is heavily influencing the design process. Others also suggest using BIM in safety problems during the construction, taking care of HSE while constructing, using the fourth dimension in the model, namely time \cite{zhang2011bim}. Other dimensions, added to 3D and the progress/time (4D), including in the model is cost (5D), and linking between as-built and lifecycle management (6D).
+
+In a complex construction, highly reliant on BIM, the organization's software is critical. A paper \cite{migilinskas2013benefits} looking at problems, obstacles, and benefits utilizing BIM identified essential findings. Having different software, and sub-software, exchange the model, is vital. Also, different contractors are used to different tools modeling, which makes changing to other software difficult. Furthermore, having a shared model secure the modelers and architects doing the same action twice. Thus, the importance of a shared model database is present \cite{lean_i_praksis}. 
+
+Having a shared BIM-model implies having sufficient software architecture. Traditionally BIM has been stand-alone applications or utilizing a client-server architecture. The problem is that stakeholders and project managers have hard to get access to the shared model.  Chang, in his paper \cite{chuang2011applying}, proposes a software-as-a-service (SaaS) architecture to support the need of the different stakeholders with a shared database. Moreover, cloud-based BIM technology is the next step in the BIM evolvement to improve the efficiency of BIM \cite{wong2014review}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{fig/bim-diagram.png}
+    \caption{BIM Maturity Diagram \cite{bew2008bim}}
+    \label{fig:bim_levels}
+\end{figure}
+
 \subsection{The problem of Labor Productivity in the Construction Industry}
-The Norwegian CI is, as mentioned, accused of having a decline in Labor Productivity (LP). An Industry that is one of the most significant industries in On-Land Norway, with 466 billion Norwegian Kroner accumulated in 2017. A common fact shared among the industry stating that CI is facing an LP decline of 10\%, since the year of 2000. Often these numbers are justified by a complex and ever-changing industry and considered not representative of the industry of today. Sure the numbers are correct, but do these numbers show us the big picture?
+The Norwegian CI is, as mentioned, accused of having a decline in LP. An Industry that is one of the most significant industries in On-Land Norway, with 466 billion Norwegian Kroner accumulated in 2017 \cite{vekst2018}. A common fact shared among the industry stating that CI is facing an LP decline of 10\%, since the year of 2000 \cite{ssb_productivity}. Often these numbers are justified by a complex and ever-changing industry and considered not representative of the industry of today. Sure the numbers are correct, but do these numbers show us the big picture?
 
-In this section, the question of declined LP in Norwegian CI will be discussed, and if LP is in fact \textit{not} declining.
+In this section, the question of declined LP in Norwegian CI will be discussed, and if LP is \textit{not} declining. A reminder; the goal of this thesis is \textit{not} to compare LP in CI and ICT, instead explore the issues causing this phenomenon to happen.
 
-Labor productivity(LP) is a description of the value created relative to the resources used, as seen in equation \ref{eq:labor_prod}. Practically speaking, a company or business achieving a high degree of LP, work less, and achieve more. 
+\subsubsection{Definition of Labor Productivity}
+LP is a description of the value created relative to the resources used, as seen in equation \ref{eq:labor_prod}. Practically speaking, a company or business achieving a high degree of LP, work less, and achieve more. 
 
 \begin{eqnarray}\label{eq:labor_prod}
 Labor Productivity = \frac{\textit{Labor dividends in quantity or value}}{\textit{Labor effort in hours or count of employees}} 
 \end{eqnarray}
 
-Having increased productivity, make sure that a company gets the right turn on investment, rather than barely be able to endure. There are lots of different factors that come in to play why some industries have a positive LP-rate, and some have a negative LP-rate, but how can this decline be, when the Industry see turnover growth?
+Having increased productivity, make sure that a company gets the right turn on investment, rather than barely be able to endure. There are lots of different factors that come in to play why some industries have a increasing LP-rate, and some have a decreasing LP-rate, but how can this decline be, when the Industry see turnover growth?
+
+\subsubsection{Aspects of Labor Productivity in the Construction Industry}
+An article \cite{ssb_productivity} posted by Statistics Norway (SSB) proclaiming that the constructing Industry (CI) suffer a substantial decline of 10\%, since the year of 2000. The article shows that this trend is also present in both Sweden and Finland. Comparing these numbers, seen in figure \ref{fig:productivity-comparing} with the same statistics in LP in all on-land private sector businesses, where there has been an overall increase, by 30\%, one can arguably state that the decline is a fact. What do these statistics represent? SSB' definition of CI used in this calculation is labor that is directly involved in the on-site constructing, which is not representative of what is considered CI of 2019. Much of the work done on today's building site is prefabricated, and to get construction completed, one has to cooperate with a lot of businesses and industries. SSB explains that the reason for the small definition of CI is because of an EU-standard; hence, the comparison of the northern countries. If we consider the entire supply chain, there is a minor, in fact, increase in productivity of about 2\% from 2000 to 2016, as seen in figure \ref{fig:LP_supply_chain}.
 
 \begin{figure}
     \centering
@@ -92,8 +115,6 @@ Having increased productivity, make sure that a company gets the right turn on i
     \label{fig:productivity-comparing}
 \end{figure}
 
-By Statistics Norway (SSB) the constructing Industry (CI) suffer a substantial decline of 10\%, since the year of 2000. This trend is also present in both Sweden and Finland. Comparing these numbers, seen in figure \ref{fig:productivity-comparing} with the same statistics in LP in all on-land private sector businesses, where there has been an overall increase, by 30\%, one can arguably state that the decline is a fact. What do these statistics represent? SSB' definition of CI used in this calculation is labor that is directly involved in the on-site constructing, which is not representative of what is considered CI of 2019. Much of the work done on today's building site is prefabricated, and to get construction completed, one has to cooperate with a lot of businesses and industries. SSB explains that the reason for the small definition of CI is because of an EU-standard; hence, the comparison of the northern countries. If we consider the entire supply chain, there is a minor, in fact, increase in productivity of about 2\% from 2000 to 2016, as seen in figure \ref{fig:LP_supply_chain}.
-
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{fig/ba_value_chain.png}
@@ -101,43 +122,13 @@ By Statistics Norway (SSB) the constructing Industry (CI) suffer a substantial d
     \label{fig:LP_supply_chain}
 \end{figure}
 
-An issue paper posted by Sintef in 2013 raises the discussion about this topic. The issue paper states three central observations: (1) The numbers does not tell the whole story about productivity, (2) the numbers can’t be used in scientific research and (3) the numbers can not be used in comparing businesses, projects or corporations, because each project is so vastly different from one another. 
+An issue paper \cite{langlo2013maaling} posted by Sintef in 2013 raises the discussion about this topic. The issue paper states three central observations: (1) The numbers does not tell the whole story about productivity, (2) the numbers can’t be used in scientific research and (3) the numbers can not be used in comparing businesses, projects or corporations, because each project is so vastly different from one another. 
 
 Looking at observation two, stating that the numbers are not to be used, measuring increased productivity in CI overall. We need, therefore, to look at a process, a specific project, or a corporation to conduct a sufficient scientific analysis. This holds for a case study, where one looks at an individual project, analyzing the internal processes and project management to identify the measurements taken to boost internal productivity. Moreover, complexity makes for no comparison between different projects, because when creating a complicated construction, sometimes new invention needs to happen, and this is not something to be compared. In the same way, comparing productivity in different software development projects is not relevant. If one is to construct the same house, or the same piece of software, time after time, then a comparison is very legit. Then again, in this case, the ingenuity is discussable.
 
-Stating that CI has declining Labor Productivity is therefore not unilaterally correct - still, if we consider the total value chain, the result is considered poor. The industry is taking action to get labor productivity closer to the average rate. The focus is to make each project as efficient and productive as possible, but that is always the case. Simply because of the marginal cost gained.
+Stating that CI has declining LP is therefore not unilaterally correct - still, if we consider the total value chain, the result is considered poor. The industry is taking action to get LP closer to the average rate. The focus is to make each project as efficient and productive as possible, but that is always the case. Simply because of the marginal cost gained.
 
 Thus yields for a bottom-up approach: Starting with a process in a project and perfecting it, continuing with each process will eventually lead to a resulting better efficiency and productivity in the entire project.  Which, if done in the entire constructing industry, will lead to increased LP overall. Therefore, the industry needs to overcome the challenges, mentioned earlier, (starting with a breach of planned timeline and budget, with symptoms such as requirements change during design, increased complexity, and struggling to complete the products,) were digitalization, Agile (hereunder Lean), is promising and populare solutions to the problem. 
-
-\subsubsection{Measuring productivity on project-, process- and process level}
-Practicing the bottom-up approach and implementing Lean Constructing, explained in section \ref{sec:lean}, in the design- and implementation phase, increasing productivity, and overcome difficulties (such as requirements change during design, increased complexity, and breach of planned timeline and budget) within the particular project phases. Lean is an excellent method but offers no mechanism measuring the achieved improvements. Using KPI's measuring could be a solution. Skappel \cite{KPIs_in_lean} suggests in her master thesis, ten KPIs ensuring continuous flow improvement in Lean design process: 
-\begin{enumerate}
-    \item Number of work packages (deliveries) completed and delivered within a takt time
-    \item  Number of decisions made on the wrong basis
-    \item  Number of revisions after products in a common BIM are frozen
-    \item  Number of unresolved questions in the dialog matrix
-    \item  Intensity Curve - Number of questions asked in the dialog matrix and how fast these are
-    resolved
-    \item  Number of approved functional descriptions prepared at the right time
-    \item  Number of correct functional descriptions revealed during table testing
-    \item  Number of systems with developed test procedures before sending contract to contractors
-    \item  Number of change requests due to errors and misunderstandings
-    \item  Percentage of project material delivered to the contractors at the right time
-\end{enumerate}
-These KPIs are yet to be tested, but still promising ensuring LP in the first phase of a traditional CI-project evolve in the appropriate direction. 
-
-In addition, by recommendation of the issue paper a project, started in 2015, establishing a state-of-the-art performance measurement tool. In 2017 the resulting Nordic 10-10 \cite{nordic-10-10} program was finished. Nordic 10-10 is a version of the CII 10-10 program\cite{CII-10-10}, designed and translated for the Nordic countries. The CII 10-10 program is a survey-based measurement tool based on the concept of anonymously surveying members of a project, regarding their project's performance, team dynamic, and organizational relationship. The surveying is done at the end of each of the five faces of the constructing project. Opposite to a standard approach, where such analysis is done only one time; at the end of the project. Using Nordic 10-10 results in more agile project management, where changes are implemented throughout the project. In some projects, they even do the analysis even more often, allowing the project manager to make changes also within each phase of the project. 
-
-As mentioned, the use of process management and method management has helped ICT and software development. If not directly increasing LP, although structuring projects, increasing interactions, and overcome the challenges in SD and curing the symptoms seen both in ICT-industry and the CI.  
-
-Since the introduction of SCRUM \cite{sutherland}, in 1995, the use of it, and other SDM, has been wastly spread throughout the majority of software development projects in the world, and Norway as well. It is, therefore, fascinating looking at the figure \ref{fig:ICT_BA_1972}. Comparing LP in ICT and CI from 1972, up to the beginning of the '90s. Sky-rocketing after dot com, at the beginning of this century, while CI has a slight declining graph after breaking the millennia. Knowing the Agile manifesto was published in 2001 makes for a promising correlation. Though, one can not use LP as a single source of indication, nor stating that SDM is the single reason for the progress; this result yields for implementing agile project management in other industries. The next section will, accordingly, introduce different agile project methods.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{fig/ba_on-land_ICT.png}
-    \caption{Labor productivity in ICT, compared to constructing industry and average on-land businesses in Norway, from 2000 to 2016.}
-    \label{fig:LP_ICT_VS}
-\end{figure}
 
 \section{Agile Project Management}
 This section will give an overview of Agile in the context of project management, as well as provide an introduction of different Agile management methods as context for the reader. Furtheremore, a discussion of Agile as a management method, and if the introduction of Lean is in fact just a hype. 
@@ -197,9 +188,33 @@ The lean startup was written by Eric Ries, which origin is software developer, a
 \subsubsection{Lean Construction as a Context for the Project}\label{sec:lean_construction}
 Agile Construction origins from the Lean Manufacturing, and share many mutual ideas, despite operating on vastly different products \cite{salem2006lean}. While in manufacturing, one can move the product around, the physical size of a construction project induce other measures in Constructing. That is why Lean Construction has rejected many of the ideas from Laan Manufacturing \cite{howell1999lean}. The essential aspect of Agile Construction is flow. For the method to accomplish the perfect flow, it does, as in other Agile methodologies, stack each iteration with a clear set of objectives to be conducted in the planned timeframe, and the flow is kept by planning the correct amount of tasks before the set deadline. The Norwegian Lean Construction translation uses a train as an image of the flow. Where the idea is for the train to move through the construction. The movement happens when every task within a specific area is completed. The train is represented with a set of cars, each a representation of a discipline. Alining the cars, so that the correct disciplines are in succeeding order.
 
-The output of every flow is the percent planned completed (PPC). The managers can adjust the order of carts, or the number of tasks to make the production more efficient. When utilizing Lean Construction, a top-down approach recommended \cite{lean_i_praksis}. This emphasizes the problem raised by Ingvaldsen, in her article, that the teams lose autonomy when applying Lean in, which conflicts with the Norwegian working model. 
+The output of every flow is the percent planned completed (PPC). The managers can adjust the order of carts, or the number of tasks to make the production more efficient. When utilizing Lean Construction, a top-down approach recommended \cite{lean_i_praksis}. This emphasizes the problem raised by Ingvaldsen, in her article, that the teams lose autonomy when applying Lean in, which conflicts with the Norwegian working model.
 
-Applying agile and lean has, for the most part, had a positive impact on the projects. The deployment is, as mentioned, a way for managers to control the production. Moreover, a tool to control a phase of the process, that has to do with designing and implementation. Added to the process management, the coordination of people in a complex organization is equally as important. The next section is going to discuss this multifaceted area of administration.
+\subsubsection{Measuring productivity on project-, process- and process level}
+Lean is an excellent method but offers no mechanism measuring the achieved improvements, such as the burndownchart in SCRUM \cite{sutherland}. Skappel, in her master thesis \cite{KPIs_in_lean}, suggests using KPIs measuring the improved perfomence. Ten KPIs, is proposed, ensuring continuous flow improvement in Lean design process: 
+\begin{enumerate}
+    \item Number of work packages (deliveries) completed and delivered within a takt time
+    \item  Number of decisions made on the wrong basis
+    \item  Number of revisions after products in a common BIM are frozen
+    \item  Number of unresolved questions in the dialog matrix
+    \item  Intensity Curve - Number of questions asked in the dialog matrix and how fast these are
+    resolved
+    \item  Number of approved functional descriptions prepared at the right time
+    \item  Number of correct functional descriptions revealed during table testing
+    \item  Number of systems with developed test procedures before sending contract to contractors
+    \item  Number of change requests due to errors and misunderstandings
+    \item  Percentage of project material delivered to the contractors at the right time
+\end{enumerate}
+These KPIs are yet to be tested, but still promising ensuring LP in the first phase of a traditional CI-project evolve in the appropriate direction. 
+
+In addition, by recommendation of a issue paper \cite{langlo2013maaling}, a project started in 2015, establishing a state-of-the-art performance measurement tool. In 2017 the resulting Nordic 10-10 \cite{nordic-10-10} program was finished. Nordic 10-10 is a version of the CII 10-10 program\cite{CII-10-10}, designed and translated for the Nordic countries. The CII 10-10 program is a survey-based measurement tool based on the concept of anonymously surveying members of a project, regarding their project's performance, team dynamic, and organizational relationship. The surveying is done at the end of each of the five faces of the constructing project. Opposite to a standard approach, where such analysis is done only one time; at the end of the project. Using Nordic 10-10 results in more agile project management, where changes are implemented throughout the project. In some projects, they even do the analysis even more often, allowing the project manager to make changes also within each phase of the project. 
+
+\subsection{Agile, a populare fade in management?}
+Over the past decades, many new trends in project management have emerged and later faded away. A paper \cite{padalkar2016six} exploring six decades of project management trends illustrates the different perspectives of project management. Every trend argues its sovereignty. This illustrates the argument of Rolfsen, in her chapter in the book \textit{Key Issues in Organizational Communication} \cite{rolfsen2004tyranny}, stating that managers are slavish following new fashions of project management. Rolfsen argues that the project management literature is a significant industry of its own. Often the literature is the one answer to every problem and criticizes the older theories, often written using pathos influencing the reader. Even though the literature promotes new methods into the organization, Rolfsen emphasizes that every fade has some good points. 
+
+Even though the focus on different fades promotes different ways of management, the goal is always the same; boost the marginal cost. The results of applying agile in the ICT-industry are promising, hence the increased LP over the past decades. The effect utilizing lean construction, on the other hand, is not to be seen in the statistics, though some papers can report on increased LP \cite{aziz2013applying, ballard1994implementing}.
+
+Applying agile and lean has, for the most part, had a positive impact on projects. Also, every project management trend bring good points into the organization. The deployment of agile is, as mentioned, a way for managers to control the production. Moreover, a tool to control a phase of the process, that has to do with designing and implementation. Added to the process management, the coordination of people in a complex organization is equally as important. The next section is going to discuss this multifaceted area of administration.
 
 \section{Cooperation in Large Organizations}
 The work of constructing a highly complex and costly structure is, as we have understood, difficult. There is no straightforward way of doing it, and the focus on project management is an essential part of it. Though, in the end, the act of design and project management is primarily making people work together. Make people interact, coordinate, and synchronize for them to create something that could not happen, if not cooperating. The challenge of making people meet and work together on a common goal, not being self-centered, is something the industry finds difficult. It is seen both in CI, in ICT, and most other industries that have to coordinate different domains of competence. 
